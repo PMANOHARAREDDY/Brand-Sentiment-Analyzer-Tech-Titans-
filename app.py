@@ -1,4 +1,6 @@
 import os
+os.environ['MPLCONFIGDIR'] = 'static/plots'  # or another writable path
+import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt
 import seaborn as sns
 from flask import Flask, request, render_template, send_from_directory, url_for
