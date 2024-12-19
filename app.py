@@ -1,5 +1,6 @@
 import os
-os.environ['MPLCONFIGDIR'] = 'static/plots'  # or another writable path
+os.makedirs('static/plots', exist_ok=True)
+os.environ['MPLCONFIGDIR'] = 'static/plots'
 import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt
 import seaborn as sns
